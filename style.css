@@ -5,45 +5,61 @@ body {
 .header {
   grid-area: header;
   background: #0d1526;
+  display: grid;
+  place-content: center;
 }
 
 .menu {
   grid-area: menu;
   background: #f03c4d;
+  display: grid;
+  place-content: center;
 }
 
 .hero {
   grid-area: hero;
   background: #1e90ff;
+  display: grid;
+  place-content: center;
 }
 
 .main {
   grid-area: main;
   background: #24344b;
+  display: grid;
+  place-content: center;
 }
 
 .banner {
   grid-area: banner;
   background: #FFD166;
+  display: grid;
+  place-content: center;
 }
 
 .extra {
   grid-area: extra;
   background: #06D6A0;
+  display: grid;
+  place-content: center;
 }
 
 .image {
   grid-area: image;
   background: #BEE9E8;
+  display: grid;
+  place-content: center;
 }
 
 .toolbar {
   grid-area: toolbar;
   background: #6a727c;
+  display: grid;
+  place-content: center;
 }
 
 .grid {
-  height: 100vh;
+  height: 94vh;
   color: white;
   font-family: sans-serif;
   display: grid;
