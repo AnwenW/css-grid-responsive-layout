@@ -1,3 +1,7 @@
+body {
+  margin: 20px;
+}
+
 .header {
   grid-area: header;
   background: #0d1526;
@@ -39,6 +43,9 @@
 }
 
 .grid {
+  height: 100vh;
+  color: white;
+  font-family: sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 2fr repeat(4, 1fr);
