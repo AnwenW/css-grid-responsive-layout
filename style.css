@@ -7,6 +7,7 @@ body {
   background: #0d1526;
   display: grid;
   place-content: center;
+  color: white;
 }
 
 .menu {
@@ -14,6 +15,7 @@ body {
   background: #f03c4d;
   display: grid;
   place-content: center;
+  color: white;
 }
 
 .hero {
@@ -21,6 +23,7 @@ body {
   background: #1e90ff;
   display: grid;
   place-content: center;
+  color: white;
 }
 
 .main {
@@ -28,6 +31,7 @@ body {
   background: #24344b;
   display: grid;
   place-content: center;
+  color: white;
 }
 
 .banner {
@@ -59,23 +63,16 @@ body {
 }
 
 .grid {
-  height: 94vh;
-  color: white;
+  min-height: 540px;
+  max-height: 94vh;
   font-family: sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 2fr repeat(4, 1fr);
-  grid-template-areas:
-    "header header header header"
-    "hero hero hero hero"
-    "menu main main main"
-    "menu main main main"
-    "menu banner banner banner"
-    "menu extra image image";
 }
 
-/*
-@media (min-width: 721px) {
+
+@media (min-width: 621px) {
   .grid {
     grid-template-areas:
       "header header header header"
@@ -83,7 +80,7 @@ body {
       "menu main main main"
       "menu main main main"
       "menu banner banner banner"
-      "menu extra image image";
+      "menu image image extra";
   }
 }
 
@@ -93,8 +90,8 @@ body {
       "header menu menu menu"
       "hero hero hero hero"
       "hero hero hero hero"
-      "main main . image"
-      "main main . extra"
+      "main main image extra"
+      "main main image extra"
       "banner banner banner banner";
   }
-} */
+}
