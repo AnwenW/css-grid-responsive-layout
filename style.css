@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 2fr repeat(2, minmax(75px, 1fr));
+  grid-template-areas:  ". . . ."
+                        ". . . item1"
+                        "item2 item2 item2 item1"
+                        "item2 item2 item2 .";
 }
 
 #item1,#item2 {
@@ -14,15 +18,10 @@
 
 #item1 {
   background: rgba(255,0,0,0.7);
-  /* grid-column: 1;
-  grid-row: 2/ 4; */
-  /* Replace with grid-area = grid-row-start / grid-column-start / grid-row-end / grid-column-end. If only the first two properties are defined, the item will be placed between those lines and the following ones. Can also use span. */
-  grid-area: 2 / 1 / span 2 / span 1;
+  grid-area: item1;
 }
 
 #item2 {
   background: rgba(0,0,255,0.7);
-  /* grid-column: 2 / span 3;
-  grid-row: 3 / span 2; */
-  grid-area: 3 / 2 / span 2 / span 3;
+  grid-area: item2;
 }
