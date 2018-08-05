@@ -1,27 +1,77 @@
+.header {
+  grid-area: header;
+  background: #0d1526;
+}
+
+.menu {
+  grid-area: menu;
+  background: #f03c4d;
+}
+
+.hero {
+  grid-area: hero;
+  background: #1e90ff;
+}
+
+.main {
+  grid-area: main;
+  background: #24344b;
+}
+
+.banner {
+  grid-area: banner;
+  background: #FFD166;
+}
+
+.extra {
+  grid-area: extra;
+  background: #06D6A0;
+}
+
+.image {
+  grid-area: image;
+  background: #BEE9E8;
+}
+
+.toolbar {
+  grid-area: toolbar;
+  background: #6a727c;
+}
+
 .grid {
-  background: rgba(255,255,0,0.2);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 40px 2fr repeat(2, minmax(75px, 1fr));
-  grid-template-areas:  ". . . ."
-                        ". . . item1"
-                        "item2 item2 item2 item1"
-                        "item2 item2 item2 .";
+  grid-template-rows: 40px 2fr repeat(4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "menu main main main"
+    "menu main main main"
+    "menu banner banner banner"
+    "menu extra image image";
 }
 
-#item1,#item2 {
-  display: grid;
-  place-items: center center;
-  color: white;
-  font-family: sans-serif;
+/*
+@media (min-width: 721px) {
+  .grid {
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      "menu main main main"
+      "menu main main main"
+      "menu banner banner banner"
+      "menu extra image image";
+  }
 }
 
-#item1 {
-  background: rgba(255,0,0,0.7);
-  grid-area: item1;
-}
-
-#item2 {
-  background: rgba(0,0,255,0.7);
-  grid-area: item2;
-}
+@media (min-width: 1001px) {
+  .grid {
+    grid-template-areas:
+      "header menu menu menu"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "main main . image"
+      "main main . extra"
+      "banner banner banner banner";
+  }
+} */
