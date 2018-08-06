@@ -60,6 +60,11 @@ body {
   background: #6a727c;
   display: grid;
   place-content: center;
+  color: white;
+  grid-column: 4;
+  grid-row: 1 / -1;
+  opacity: .85;
+  z-index: 1;
 }
 
 .grid {
@@ -67,8 +72,6 @@ body {
   height: 94vh;
   font-family: sans-serif;
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 40px 2fr repeat(4, 1fr); */
 }
 
 @media (max-width: 640px) {
