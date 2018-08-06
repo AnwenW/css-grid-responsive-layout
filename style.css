@@ -55,7 +55,7 @@ body {
   place-content: center;
 }
 
-.toolbar {
+/* .toolbar {
   grid-area: toolbar;
   background: #6a727c;
   display: grid;
@@ -65,15 +65,25 @@ body {
   grid-row: 1 / -1;
   opacity: .85;
   z-index: 1;
-}
+} */
 
 .grid {
   min-height: 540px;
   height: 94vh;
   font-family: sans-serif;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "extra"
+    "image";
 }
-
+/*
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
@@ -87,7 +97,7 @@ body {
       "extra"
       "image";
   }
-}
+} */
 
 @media (min-width: 641px) {
   .grid {
@@ -112,5 +122,15 @@ body {
       "main main image extra"
       "main main image extra"
       "banner banner banner banner";
+  }
+}
+
+@supports not (display: grid) {
+  @media (min-width: 721px) {
+    .header,
+    .extra {
+      float: left;
+      width: 50%;
+    }
   }
 }
