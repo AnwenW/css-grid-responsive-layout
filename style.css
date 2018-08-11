@@ -128,37 +128,37 @@ body {
 @supports not (display: grid) {
 
   .header {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
   .menu {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
   .hero {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
   .main {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
   .banner {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
   .extra {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
   .image {
-    padding: 6vh;
+    padding: 5.5vh;
     text-align: center;
   }
 
