@@ -128,37 +128,37 @@ body {
 @supports not (display: grid) {
 
   .header {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
   .menu {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
   .hero {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
   .main {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
   .banner {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
   .extra {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
   .image {
-    padding: 5vh;
+    padding: 6vh;
     text-align: center;
   }
 
@@ -168,25 +168,25 @@ body {
     .extra {
       float: left;
       width: 50%;
-      padding: 8vh;
+      padding: 8vh 0;
     }
     .menu {
-      padding: 8vh;
+      padding: 8vh 0;
     }
 
     .hero {
-      padding: 8vh;
+      padding: 8vh 0;
     }
 
     .main {
-      padding: 8vh;
+      padding: 8vh 0;
     }
 
     .banner {
-      padding: 8vh;
+      padding: 8vh 0;
     }
     .image {
-      padding: 8vh;
+      padding: 8vh 0;
     }
 
   }
