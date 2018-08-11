@@ -126,11 +126,62 @@ body {
 }
 
 @supports not (display: grid) {
+
+  .header {
+    height: 13vh;
+  }
+
+  .menu {
+    height: 13vh;
+  }
+
+  .hero {
+    height: 13vh;
+  }
+
+  .main {
+    height: 13vh;
+  }
+
+  .banner {
+    height: 13vh;
+  }
+
+  .extra {
+    height: 13vh;
+  }
+
+  .image {
+    height: 13vh;
+  }
+
   @media (min-width: 721px) {
+
     .header,
     .extra {
       float: left;
       width: 50%;
+      height: 19vh;
     }
+    .menu {
+      height: 19vh;
+    }
+
+    .hero {
+      height: 19vh;
+    }
+
+    .main {
+      height: 19vh;
+    }
+
+    .banner {
+      height: 19vh;
+    }
+    .image {
+      height: 19vh;
+    }
+
   }
+  
 }
