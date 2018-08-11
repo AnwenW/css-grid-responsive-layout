@@ -128,31 +128,38 @@ body {
 @supports not (display: grid) {
 
   .header {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   .menu {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   .hero {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   .main {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   .banner {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   .extra {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   .image {
-    height: 13vh;
+    padding: 5vh;
+    text-align: center;
   }
 
   @media (min-width: 721px) {
@@ -161,27 +168,27 @@ body {
     .extra {
       float: left;
       width: 50%;
-      height: 19vh;
+      padding: 8vh;
     }
     .menu {
-      height: 19vh;
+      padding: 8vh;
     }
 
     .hero {
-      height: 19vh;
+      padding: 8vh;
     }
 
     .main {
-      height: 19vh;
+      padding: 8vh;
     }
 
     .banner {
-      height: 19vh;
+      padding: 8vh;
     }
     .image {
-      height: 19vh;
+      padding: 8vh;
     }
 
   }
-  
+
 }
